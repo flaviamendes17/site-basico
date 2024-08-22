@@ -8,7 +8,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: .2s linear ;
 }
 
@@ -17,6 +16,25 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow: hidden;
+}
+
+section {
+    padding:2rem 9%  ;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color:#fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: #b2dafa;
 }
 
 header {
@@ -55,4 +73,149 @@ header .navbar a{
     font-size: 2.5rem;
     color:#333;
     margin-left: 1.5rem;
+}
+
+
+header #toggler {
+    display: none;  
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+
+
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/estrada.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: end;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 5rem;
+    color: #ffffff;
+    text-align: right;
+    position: relative;
+    margin-right: 3.7%;
+    padding-right: 0.5%;
+    display: flex;
+    justify-content: end;
+}
+
+.home .content span{
+    font-size:1.1rem;
+    color:var(--blue);
+    padding: 1rem;
+    line-height:1.5;
+}
+
+.home .content h1{
+    font-size: 2.0rem;
+    color:hsl(244, 60%, 25%);
+    padding: 1.2rem;
+    line-height:1.2;
+    text-align: right;
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+.home .content p{
+    font-size: 1.9rem;
+    color:hsla(245, 100%, 12%, 0.621);
+    padding: 1.2rem;
+    line-height:1.5;
+    text-align: right;
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+
+
+    html {
+        font-size:55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+
+@media (max-width:768px){
+    
+    header.fa-bars{
+        display: block;
+    }
+
+    header .navbar {
+       position: absolute;
+       top: 100%; left: 0; right: 0;
+       background: #eee; 
+       border-top: .1rem solid rgba(0,0,0,.1) ;
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background:#fff ;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+}
+
+
+@media (max-width:450px){
+
+
+    html {
+        font-size:50%;
+    }
 }
