@@ -95,12 +95,13 @@ header .fa-bars {
 
 .home {
     display: flex;
-    align-items: center;
+   align-items: center;
     min-height: 100vh;
     background: url(../img/pexels-ogproductionz-17242799.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     justify-content: end;
+    padding-bottom: 21%;
 }
 
 .home .content{
@@ -108,7 +109,7 @@ header .fa-bars {
 }
 
 .home .content h3{
-    font-size: 5rem;
+    font-size: 4rem;
     color: #ffffff;
     text-align: right;
     position: relative;
@@ -138,7 +139,7 @@ header .fa-bars {
 
 .home .content p{
     font-size: 1.9rem;
-    color:hsla(245, 100%, 12%, 0.621);
+    color:#e5e5e5;
     padding: 1.2rem;
     line-height:1.5;
     text-align: right;
@@ -176,6 +177,7 @@ header .fa-bars {
 
     header {
         padding: 2rem;
+        max-width: 100vw;
     }
 
     section{
@@ -219,3 +221,55 @@ header .fa-bars {
         font-size:50%;
     }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline; 
+}
+
+main {
+    padding: 20px;
+    background: #fff; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+main h1 {
+    color: #333; 
+    margin-bottom: 20px; 
+}
+
+main p {
+    color: #666; 
+}
+
+
