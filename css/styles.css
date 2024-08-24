@@ -223,6 +223,8 @@ header .fa-bars {
     object-fit: cover; 
 }
 
+
+
 .form-group {
     margin-bottom: 15px;
 }
@@ -239,7 +241,7 @@ header .fa-bars {
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #0e024c;
+    border: 2px solid #0e024c;
     border-radius: 10px;
     box-sizing: border-box;
 }
